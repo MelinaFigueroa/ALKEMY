@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">Lista de Compras</h1>
+        
+        <div class="flex mb-4">
+            <input 
+                type="text" 
+                id="itemInput" 
+                placeholder="Agregar un nuevo item"
+                class="flex-grow px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+            <button 
+                id="addButton"
+                class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-r-lg transition duration-200"
+            >
+                Agregar
+            </button>
+        </div>
+        
+        <ul id="itemList" class="mb-6 space-y-2"></ul>
+        
+        <div class="flex space-x-2">
+            <button 
+                id="saveButton"
+                class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex-grow transition duration-200"
+            >
+                Guardar
+            </button>
+            <button 
+                id="clearButton"
+                class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg flex-grow transition duration-200"
+            >
+                Limpiar
+            </button>
+        </div>
+    </div>
+
+    <script src="listaInteractiva.js"></script>
+</body>
+</html>
